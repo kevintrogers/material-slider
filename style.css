@@ -16,9 +16,8 @@
 }
 
 .active {
-  opacity:1;
+  opacity: 1;
   visibility: visible;
-
 }
 
 #slide_box {
@@ -27,6 +26,5 @@
 
 .inactive {
   opacity: 0;
-  visibility: hidden;  
-
+  visibility: hidden;
 }
