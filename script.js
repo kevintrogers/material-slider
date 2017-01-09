@@ -16,15 +16,15 @@ var index=1, increaseIndex, decreaseIndex;
   }
   
 $('#right').click(function(){
-  $('#slide' + index).toggleClass('inactive').removeClass('active');
+  $('#slide' + index).toggleClass('inactive').toggleClass('active');
   increaseIndex();
-  $('#slide' + index).toggleClass('active').removeClass('inactive');
+  $('#slide' + index).toggleClass('active').toggleClass('inactive');
 });
   
   $('#left').click(function(){
-  $('#slide' + index).toggleClass('inactive').removeClass('active');
+  $('#slide' + index).toggleClass('inactive');
   decreaseIndex();
-  $('#slide' + index).toggleClass('active').removeClass('inactive')
+  $('#slide' + index).toggleClass('inactive');
 });
 
   });

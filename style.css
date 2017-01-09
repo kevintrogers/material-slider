@@ -1,59 +1,3 @@
-@-webkit-keyframes fadeIn {
-  from {
-    z-index: -1;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  }
-  to {
-    z-index: 1 !important;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }
-}
-@keyframes fadeIn {
-  from {
-    z-index: -1;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  }
-  to {
-    z-index: 1 !important;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }
-}
-@-webkit-keyframes fadeOut {
-  from {
-    z-index: 1 !important;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }
-  to {
-    z-index: 0 !important;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  }
-}
-@keyframes fadeOut {
-  from {
-    z-index: 1 !important;
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }
-  to {
-    z-index: 0 !important;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  }
-}
 .slide_frame {
   position: relative;
   height: 65vh;
@@ -72,9 +16,9 @@
 }
 
 .active {
-  z-index: 1;
-  -webkit-animation: fadeIn 1s forwards;
-          animation: fadeIn 1s forwards;
+  opacity:1;
+  visibility: visible;
+
 }
 
 #slide_box {
@@ -82,6 +26,7 @@
 }
 
 .inactive {
-  -webkit-animation: fadeOut 1s forwards;
-          animation: fadeOut 1s forwards;
+  opacity: 0;
+  visibility: hidden;  
+
 }
